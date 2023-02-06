@@ -79,7 +79,7 @@ function addPositive3(a, b) {
 }
 console.log(addPositive3());
 
-/* auach möglich , für den zufällige Zahlenwerte
+/* auch möglich , für den zufällige Zahlenwerte
 function addPositive3(a, b) {
   a = -1;
   b = -8;
@@ -87,3 +87,11 @@ function addPositive3(a, b) {
 }
 console.log(addPositive3());
 */
+console.log("Aufgabe Ende");
+
+function userName(firstName, lastName) {
+  firstName = "Lars";
+  lastName = "Sommer";
+  return firstName + lastName;
+}
+console.log(userName());
