@@ -1,5 +1,7 @@
 /*---------04) Coding-Task: Variables--------*/
 /*----01) Spot the errors and fix them----*/
+/*
+
 console.log("01) Spot the errors and fix them");
 
 let userName = "Brad";
@@ -10,7 +12,7 @@ function getUserNameLength(name) {
   return result;
 }
 /*----02) isString function--*/
-
+/*
 console.log(getUserNameLength(userName) > 4);
 // ^______________ Should log true
 
@@ -34,3 +36,12 @@ console.log(isString(""));
 
 console.log(isString("John" + "Doe"));
 // result should be true
+
+*/
+
+const count = 1;
+if (count > 4) {
+  console.log("count is bigger than 4");
+} else if (count === 1) {
+  console.log("count is 1");
+}
