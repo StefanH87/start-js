@@ -1,8 +1,9 @@
 console.log("Moin");
 
 //06) - using loops
-console.log("06) - using loops");
-
+//01) oddNumbers function
+console.log("01) oddNumbers function");
+/*
 function oddNumbers(numFirst, numSecond) {
   let saveNumb = ""; //leere Variable declaiert die ein string ist
 
@@ -40,3 +41,54 @@ console.log(oddNumbers(9, 12));
 // result should be: 9,11
 
 console.log(oddNumbers(-5, 40));
+*/
+//--------------------------------------------------------------------------------------------//
+
+//02) charCount function
+
+function charCount(word, letter) {
+  if (charCount.lenght > 1) {
+    return "zuviel Buchstaben";
+  }
+  let count = 0;
+  word = word.toLowerCase();
+  letter = letter.toLowerCase();
+  for (let index = 0; index < word.length; index++) {
+    if (letter === word[index]) {
+      count++;
+    }
+  }
+  return count;
+}
+/*
+function charCount(word, letter) {
+  let count = word.split(letter).length - 1;
+
+  console.log(count);
+}*/
+
+console.log(charCount("hello", "l"));
+// result should be: 2
+
+console.log(charCount("mama", "m"));
+// result should be: 2
+
+console.log(charCount("Resümee", "e"));
+// result should be: 3
+
+console.log(charCount("Hokuspokus", "o"));
+console.log(charCount("Simsalabim", "ef"));
+console.log(charCount("hAlunke", "a"));
+
+/*     findet die porition des chars
+
+
+function saveChar(word, letter) {
+  //let wor = word;
+  let count = word.match("l") || word.length;
+
+  console.log(count);
+}
+
+console.log(saveChar("hello", "l"));
+*/
